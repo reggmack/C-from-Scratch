@@ -4,7 +4,14 @@ namespace Classes
 {
     public class Person
     {
-        public DateTime BirthDate { get; set; }
+        public string Name { get; set; }
+        public string UserName { get; set; }
+        public DateTime BirthDate { get; private set; }
+
+        public Person(DateTime birthdate)
+        {
+            BirthDate = birthdate;
+        }
 
         public int Age
         {
