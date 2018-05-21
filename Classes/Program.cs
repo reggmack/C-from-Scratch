@@ -1,6 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
+using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,9 +11,9 @@ namespace Classes
     {
         static void Main(string[] args)
         {
-           var cookie = new HttpCookie();
-            cookie["name"] = "Mosh";
-            Console.WriteLine(cookie["name"]);
+            var text = new Text();
+            text.Width = 100;
+            text.Copy();
         }
     }
 }
